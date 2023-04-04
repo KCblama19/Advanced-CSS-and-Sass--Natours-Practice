@@ -4,8 +4,8 @@
 
 In this **Repository** I'm going to have the various Files/Projects set up:
 -Natours
--Nexter
--Trillo
+*Nexter
++Trillo
 
 :point_down: Detail of these projects below :point_down:
 
