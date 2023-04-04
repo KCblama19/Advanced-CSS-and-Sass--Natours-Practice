@@ -3,9 +3,9 @@
 ### This is a practice from [Udemy Advanced Css Course](https://www.udemy.com/advanced-css-and-sass/?couponCode=GITHUB4)
 
 In this **Repository** I'm going to have the various Files/Projects set up:
-- Natours
-Nexter
-Trillo
+1. Natours
+2. Nexter
+3. Trillo
 
 :point_down: Detail of these projects below :point_down:
 
