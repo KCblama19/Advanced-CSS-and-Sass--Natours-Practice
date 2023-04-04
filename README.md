@@ -7,7 +7,7 @@ In this ** repository ** I'm going to have various Files/Projects set up:
 -Nexter
 -Trillo
 
-:point_down: Detail of these projects below :point_up:
+:point_down: Detail of these projects below :point_down:
 
 ### Natour Project(Brief gaze into the project).
 
