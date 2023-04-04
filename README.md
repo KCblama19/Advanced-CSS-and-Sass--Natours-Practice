@@ -27,6 +27,6 @@ It will go from the introduction to grid layouts to Mastering grid layouts.
 
 it will go from the very basic to mastery of Css flebox.
 
-:+1:
+:+1: End of the Trillo gaze
 
-:smile: Thanks for going through. :hand:
+:smile: Thanks for going through. :smile:
