@@ -2,7 +2,7 @@
 
 ### This is a practice from [Udemy Advanced Css Course](https://www.udemy.com/advanced-css-and-sass/?couponCode=GITHUB4)
 
-In this ** repository ** I'm going to have various Files/Projects set up:
+In this **Repository** I'm going to have the various Files/Projects set up:
 -Natours
 -Nexter
 -Trillo
