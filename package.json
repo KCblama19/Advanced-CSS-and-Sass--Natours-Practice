@@ -1,0 +1,16 @@
+{
+  "name": "advanced-css-and-sass-practice",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "sass":"node-sass --watch sass/main.scss css/style.css",
+    "test": "Compile:css"
+  },
+  "author": "Abraham K. Blama",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.0"
+  }
+}
