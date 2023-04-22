@@ -12,5 +12,10 @@
   "devDependencies": {
     "node-sass": "^8.0.0",
     "sass": "^1.62.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KCblama19/Advanced-CSS-and-Sass--Natours-Practice.git"
   }
 }
