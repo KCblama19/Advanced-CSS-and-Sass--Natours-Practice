@@ -1,0 +1,36 @@
+// ======================================== //
+// ALL TYPOGRAPHY RELATED CODE GOES IN HERE //
+// ======================================== //
+
+body {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-dark-gray;
+    padding: 3rem;
+}
+
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+
+    &--main {
+        display: block;
+        font-weight: 400;
+        font-size: 6rem;
+        letter-spacing: 3.5rem;
+        animation: moveInLeft 4s ease-out;
+    }
+    
+    &--sub {
+        display: block;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 2.4rem;
+        animation: moveInRight 4s ease-out;
+        margin-bottom: 8rem;
+        
+    }
+}

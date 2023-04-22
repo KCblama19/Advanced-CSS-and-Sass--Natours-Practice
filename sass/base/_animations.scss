@@ -1,0 +1,56 @@
+//===================================== //
+// All AMINATION RELATED CODES GOES HERE //
+//===================================== //
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-10rem);
+    }
+
+    80% {
+
+        transform: translate(1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translate(10rem);
+    }
+
+    80% {
+
+        transform: translate(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+
+}
+
+@keyframes moveInDown {
+    0%   {
+        opacity: 0;
+        transform: translateY(8rem);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+}

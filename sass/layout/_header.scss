@@ -1,0 +1,43 @@
+// ================================= //
+// ALL LAYOUT RELATED CODE GOES HERE //
+// ================================= //
+
+
+.header {
+    background-image:linear-gradient(
+        to bottom right,
+        rgba($primary-color-light, 0.8),
+        rgba($primary-color-dark, 0.8) ),
+        url(../img/hero-small.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+
+    clip-path: polygon(0% 0%,0% 100%,100% 75%,100% 0%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+        animation: moveInRight 4s;
+    }
+    
+    &__logo {
+        width: 6.8rem;
+    }
+    
+    &__text-box {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        display: inline-block;
+    
+        transform: translate(-50%,-50%);
+    
+        /* border: 1px solid black; */
+    }
+}

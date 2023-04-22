@@ -1,0 +1,26 @@
+// =========================================== //
+// ALL IMPORTANT OR BASE LEVEL CODES GOES HERE //
+// =========================================== //
+
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color:$color-white;
+}
