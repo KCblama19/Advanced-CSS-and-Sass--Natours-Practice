@@ -34,3 +34,20 @@ body {
         
     }
 }
+
+.heading-secondary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+
+    transition: all .2s;
+
+    &:hover {
+        transform: skewX(15deg) skewY(2deg);
+    }
+
+}
