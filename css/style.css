@@ -82,11 +82,27 @@ body {
   .heading-secondary:hover {
     transform: skewX(15deg) skewY(2deg); }
 
+.heading-tertiary {
+  font-size: 1.8rem;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+
 .u-center-text {
   text-align: center; }
 
-.u-margin-bottom {
-  margin-bottom: 5rem; }
+.u-margin-bottom--xsmall {
+  margin-bottom: 0.5rem; }
+
+.u-margin-bottom--small {
+  margin-bottom: 1.3rem; }
+
+.u-margin-bottom--medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom--big {
+  margin-bottom: 8rem; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -126,6 +142,48 @@ body {
 .btn--animated {
   animation: moveInDown 2s ease 0.7s;
   animation-fill-mode: backwards; }
+
+.btn-text:link, .btn-text:visited {
+  text-decoration: none;
+  color: #7ed56f;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #7ed56f;
+  padding: .5rem;
+  transition: all .2s;
+  display: inline-block; }
+
+.btn-text:hover {
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  color: #fff;
+  transform: translateY(-0.3rem); }
+
+.btn-text:active {
+  transform: translateY(0); }
+
+.composition {
+  position: relative;
+  z-index: 10; }
+  .composition__photo {
+    width: 55%;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 2rem;
+    transition: all .2s; }
+    .composition__photo--p1 {
+      top: -2rem;
+      left: 2rem; }
+    .composition__photo--p2 {
+      top: 2rem;
+      right: 0; }
+    .composition__photo--p3 {
+      top: 10rem;
+      left: 7rem; }
+    .composition__photo:hover {
+      outline: 1rem solid #55c57a;
+      transform: scaleX(1.05) scaleY(-15px);
+      z-index: 20; }
+    .composition__photo:hover .composition__photo:not(:hover) {
+      transform: scale(-5rem); }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
