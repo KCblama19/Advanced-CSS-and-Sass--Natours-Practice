@@ -1,0 +1,22 @@
+.about-section {
+    margin-top: -25vh;
+    padding: 30rem 0;
+    background-color: #f7f7f7;
+}
+
+.features-section {
+    background-image: linear-gradient(
+                      to bottom right,
+                      rgba($primary-color-light, 0.8),
+                      rgba($primary-color-dark, 0.8)),
+                      url(../img/hero-small.jpg);
+    background-size: cover;
+    padding: 15rem 0;
+    margin-top: -10rem;
+    
+    transform: skewY(-7deg);
+
+    & > * {
+        transform: skewY(7deg);
+    }
+}

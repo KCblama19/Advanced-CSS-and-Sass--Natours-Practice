@@ -26,13 +26,14 @@
 
         &:hover {
             outline: 1rem solid $primary-color;
-            transform: scaleX(1.05) scaleY(-15px);
+            transform: scaleX(1.05);
             z-index: 20;
         }
         
-        &:hover &:not(:hover) {
-            transform: scale(-5rem);
-        }
+    }
+
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
     }
 
 }
