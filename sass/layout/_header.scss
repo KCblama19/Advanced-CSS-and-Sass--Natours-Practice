@@ -15,6 +15,7 @@
     height: 95vh;
     position: relative;
 
+    -webkit-clip-path: polygon(0% 0%,0% 100%,100% 75%,100% 0%);
     clip-path: polygon(0% 0%,0% 100%,100% 75%,100% 0%);
 
     &__logo-box {

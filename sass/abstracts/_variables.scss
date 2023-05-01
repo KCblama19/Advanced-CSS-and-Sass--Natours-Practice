@@ -8,6 +8,12 @@ $primary-color: #55c57a;
 $primary-color-light: #7ed56f;
 $primary-color-dark:#28b485;
 
+$secondary-color-light:#ffb900;
+$secondary-color-dark:#ff7730;
+
+$tertiary-color-light:#2998ff;
+$tertiary-color-dark:#5643fa;
+
 //FREQUENTLY USED COLORS.
 $color-dark-gray:#777;
 $color-white:#fff;
@@ -20,3 +26,6 @@ $gutter-horizontal: 6rem;
 
 // FONTS
 $fontSize: 1.6rem;
+
+//BOX-SHADOW
+$box-shadow:0 1.5rem 4rem rgba($color-black, .15);
