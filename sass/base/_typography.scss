@@ -8,6 +8,7 @@ body {
     line-height: 1.7;
     color: $color-dark-gray;
     padding: 3rem;
+    
 }
 
 .heading-primary {
@@ -36,7 +37,7 @@ body {
 }
 
 .heading-secondary {
-    font-size: 4rem;
+    font-size: 3.6rem;
     text-transform: uppercase;
     background-image: linear-gradient(to right, $primary-color-light, $primary-color-dark);
     -webkit-background-clip: text;

@@ -71,7 +71,7 @@ body {
     margin-bottom: 8rem; }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 3.6rem;
   text-transform: uppercase;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
@@ -155,6 +155,10 @@ body {
   transition: all 0.2s ease; }
 
 .btn--white:hover::after {
+  opacity: 0;
+  transform: scale(1.2) scale(1.3); }
+
+.btn--green:hover::after {
   opacity: 0;
   transform: scale(1.2) scale(1.3); }
 
@@ -317,6 +321,64 @@ body {
     font-size: 6rem;
     font-weight: 100; }
 
+.story {
+  width: 75%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  box-shadow: 0 1rem 1.4rem rgba(0, 0, 0, 0.14);
+  padding: 6rem;
+  padding-left: 9rem;
+  transform: skewX(-12deg);
+  overflow: hidden; }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    position: relative;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg); }
+    .story__shape-img {
+      height: 100%;
+      transition: all .5s;
+      transform: translateX(-4rem) scale(1.4); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    transition: all .5s;
+    opacity: 0;
+    backface-visibility: hidden;
+    transform: translate(-50%, 15%); }
+  .story:hover .story__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+  .story:hover .story__shape-img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(5px) brightness(80%); }
+  .story__text {
+    transform: skewX(12deg); }
+    .story__text-p {
+      font-size: 1.4rem; }
+
+.bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .15; }
+  .bg__video-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
 .header {
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-position: top;
@@ -382,3 +444,7 @@ body {
   transform: skewY(-7deg); }
   .features-section > * {
     transform: skewY(7deg); }
+
+.story-section {
+  padding: 15rem 0;
+  position: relative; }
