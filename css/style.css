@@ -379,6 +379,39 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2.5rem; }
+
+.form__input {
+  width: 100%;
+  font-family: inherit;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: all .2s; }
+  .form__input:focus {
+    border-bottom: 2px solid #ff7730;
+    transition: all .5s; }
+  .form__input:valid {
+    border-bottom: 2px solid #55c57a;
+    transition: all .3s; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: .3rem;
+  margin-left: 1.6rem;
+  display: block;
+  transition: all .2s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2.7rem); }
+
 .header {
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-position: top;
@@ -448,3 +481,18 @@ body {
 .story-section {
   padding: 15rem 0;
   position: relative; }
+
+.booking-section {
+  padding: 15rem 0;
+  background-image: linear-gradient(to bottom right, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }

@@ -1,0 +1,49 @@
+.form {
+
+    &__group:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+    &__input {
+        width: 100%;
+        font-family: inherit;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        display: block;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid transparent;
+        transition: all .2s;
+
+
+        &:focus {
+            border-bottom: 2px solid $secondary-color-dark;
+            transition: all .5s;
+        }
+
+        &:valid {
+            border-bottom: 2px solid $primary-color;
+            transition: all .3s;
+        }
+    }
+
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: .3rem;
+        margin-left: 1.6rem;
+        display: block;
+        transition: all .2s;
+    }
+
+    
+
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-2.7rem);
+    }
+}
+// .form__group {
+    
+// }
