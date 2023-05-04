@@ -43,6 +43,54 @@
         visibility: hidden;
         transform: translateY(-2.7rem);
     }
+
+    &__radio-group {
+        display: inline-block;
+        // border: 1px solid;
+        position: relative;
+        
+        &:not(:first-child) {
+            margin-left: 1rem;
+        }
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {
+        font-size: 1.5rem;
+        padding-left: 4rem;
+        
+    }
+
+    &__radio-button {
+        width: 3rem;
+        height: 3rem;
+        display: inline-block;
+        border: 5px solid $primary-color;
+        border-radius: 50%;
+        position: absolute;
+        top: -.3rem;
+        left: 0;
+
+        &::after {
+            content: "";
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $primary-color;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: .3rem;
+            left: .3rem;
+            opacity: 0;
+        }
+    }
+
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+        opacity: 1;
+    }
 }
 // .form__group {
     

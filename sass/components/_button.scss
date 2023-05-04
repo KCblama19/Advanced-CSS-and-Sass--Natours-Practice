@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link,
     &:visited {
         text-decoration: none;
@@ -7,6 +8,8 @@
         padding: 1.4rem 4rem;
         border-radius: 10rem;
         font-size: 1.6rem;
+        outline: none;
+        border: none;
     
         display: inline-block;
         position: relative;
@@ -18,7 +21,9 @@
         transform: translateY(-.3rem);
     }
     
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-.1rem);
     }
 

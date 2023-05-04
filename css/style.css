@@ -90,36 +90,38 @@ body {
   font-size: 1.6rem; }
 
 .u-center-text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u-margin-bottom--xsmall {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem !important; }
 
 .u-margin-bottom--small {
-  margin-bottom: 1.3rem; }
+  margin-bottom: 1.3rem !important; }
 
 .u-margin-bottom--medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-margin-bottom--big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-top--large {
-  margin-top: 15rem; }
+  margin-top: 15rem !important; }
 
 .u-margin-top--medium {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .u-margin-top--small {
-  margin-top: 4rem; }
+  margin-top: 4rem !important; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #fff;
   padding: 1.4rem 4rem;
   border-radius: 10rem;
   font-size: 1.6rem;
+  outline: none;
+  border: none;
   display: inline-block;
   position: relative;
   transition: all 0.3s ease; }
@@ -127,7 +129,8 @@ body {
 .btn:hover {
   transform: translateY(-0.3rem); }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem); }
 
 .btn--white {
@@ -412,6 +415,43 @@ body {
   visibility: hidden;
   transform: translateY(-2.7rem); }
 
+.form__radio-group {
+  display: inline-block;
+  position: relative; }
+  .form__radio-group:not(:first-child) {
+    margin-left: 1rem; }
+
+.form__radio-input {
+  display: none; }
+
+.form__radio-label {
+  font-size: 1.5rem;
+  padding-left: 4rem; }
+
+.form__radio-button {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  position: absolute;
+  top: -.3rem;
+  left: 0; }
+  .form__radio-button::after {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #55c57a;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    opacity: 0; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
+
 .header {
   background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-position: top;
@@ -492,7 +532,7 @@ body {
   background-repeat: no-repeat;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(255, 255, 255, 0.2);
-  height: 50rem; }
+  height: 48rem; }
   .book__form {
     width: 50%;
     padding: 6rem; }
