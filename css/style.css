@@ -504,6 +504,49 @@ body {
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
+.footer {
+  background-color: #242424;
+  padding: 10rem 0;
+  color: #777;
+  font-size: 1.4rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 5rem; }
+  .footer__logo {
+    width: 15rem;
+    height: auto; }
+  .footer__navigation {
+    border: none;
+    border-top: 2px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style-type: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 2rem; }
+  .footer__link:link, .footer__link:visited {
+    text-decoration: none;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all .3s; }
+  .footer__link:hover, .footer__link:active {
+    background-color: #242424;
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: rotate(5deg) scale(1.1); }
+  .footer__copyright {
+    border: none;
+    border-top: 2px solid #777;
+    padding-top: 2rem;
+    float: right; }
+  .footer__copyright--2 {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; }
+
 .about-section {
   margin-top: -25vh;
   padding: 30rem 0;
