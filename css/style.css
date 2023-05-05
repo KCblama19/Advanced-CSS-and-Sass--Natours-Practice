@@ -73,7 +73,7 @@ body {
 .heading-secondary {
   font-size: 3.6rem;
   text-transform: uppercase;
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #7ed56f, #13d494);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -140,10 +140,10 @@ body {
     background-color: #fff; }
 
 .btn--green {
-  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-image: linear-gradient(to right, #7ed56f, #13d494);
   color: #fff; }
   .btn--green::after {
-    background-image: linear-gradient(to right, #7ed56f, #28b485); }
+    background-image: linear-gradient(to right, #7ed56f, #13d494); }
 
 .btn::after {
   content: "";
@@ -179,7 +179,7 @@ body {
   display: inline-block; }
 
 .btn-text:hover {
-  background: linear-gradient(to right, #7ed56f, #28b485);
+  background: linear-gradient(to right, #7ed56f, #13d494);
   color: #fff;
   transform: translateY(-0.3rem); }
 
@@ -221,7 +221,7 @@ body {
   .feature-box__icon {
     font-size: 6rem;
     margin-bottom: .5rem;
-    background: linear-gradient(to right, #7ed56f, #28b485);
+    background: linear-gradient(to right, #7ed56f, #13d494);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
@@ -257,7 +257,7 @@ body {
         background-image: linear-gradient(to bottom right, #ffb900, #ff7730);
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .card__side-back--2 {
-        background-image: linear-gradient(to bottom right, #7ed56f, #28b485);
+        background-image: linear-gradient(to bottom right, #7ed56f, #13d494);
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .card__side-back--3 {
         background-image: linear-gradient(to bottom right, #2998ff, #5643fa);
@@ -275,7 +275,7 @@ body {
     .card__picture--1 {
       background-image: linear-gradient(to bottom right, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to bottom right, #7ed56f, #28b485), url(../img/nat-6.jpg); }
+      background-image: linear-gradient(to bottom right, #7ed56f, #13d494), url(../img/nat-6.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to bottom right, #2998ff, #5643fa), url(../img/nat-7.jpg); }
   .card__heading {
@@ -294,7 +294,7 @@ body {
     .card__heading-span--1 {
       background-image: linear-gradient(to right, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      background-image: linear-gradient(to right, rgba(126, 213, 111, 0.85), rgba(19, 212, 148, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
@@ -452,8 +452,119 @@ body {
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer; }
+
+.navigation__background {
+  width: 5rem;
+  height: 5rem;
+  background-image: radial-gradient(#7ed56f, #13d494);
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 1000;
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1500;
+  width: 0;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.navigation__list {
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%); }
+
+.navigation__item {
+  text-transform: uppercase;
+  margin: 1rem;
+  text-align: center;
+  font-size: 1.9rem; }
+
+.navigation__link:link, .navigation__link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  background-image: linear-gradient(120deg, transparent 50%, #fff 50%);
+  padding: 1rem 1.5rem;
+  transition: all .5s;
+  background-size: 225%;
+  background-position: 14%; }
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #000;
+  transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1; }
+
+.navigation__icon {
+  position: relative;
+  margin-top: 2.9rem; }
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 3rem;
+    height: .3rem;
+    background-color: #55c57a;
+    display: inline-block; }
+  .navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s; }
+  .navigation__icon::before {
+    top: -.8rem; }
+  .navigation__icon::after {
+    top: .8rem; }
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: all .5s; }
+
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: all .5s; }
+
 .header {
-  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(19, 212, 148, 0.8)), url(../img/hero-small.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -553,7 +664,7 @@ body {
   background-color: #f7f7f7; }
 
 .features-section {
-  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(19, 212, 148, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   padding: 15rem 0;
   margin-top: -13rem;
@@ -567,7 +678,7 @@ body {
 
 .booking-section {
   padding: 15rem 0;
-  background-image: linear-gradient(to bottom right, #7ed56f, #28b485); }
+  background-image: linear-gradient(to bottom right, #7ed56f, #13d494); }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
