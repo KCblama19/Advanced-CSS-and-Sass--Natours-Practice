@@ -138,10 +138,14 @@
         transform: rotate(-45deg) ;
         transition: all .5s;
         
+
     }
     &__checkbox:checked ~ &__button &__icon::after {
         top: 0;
         transform: rotate(45deg) ;
         transition: all .5s;
+
+
     }
 }
+
