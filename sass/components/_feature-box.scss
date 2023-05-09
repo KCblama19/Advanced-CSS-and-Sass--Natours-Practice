@@ -1,10 +1,18 @@
 .feature-box {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 3.5rem 1.5rem;
     text-align: center;
     background-color: rgba(255, 255,255, 0.8);
     box-shadow: 0 1rem 1rem rgba(0, 0,0, 0.2);
     transition: transform .3s;
+
+    @include mediaQueries(smallphone) {
+        
+        width: 85%;
+        margin: 0 auto;
+        font-size: 2.8rem;
+        padding: 8rem 1.6rem;
+    }
 
     &__icon{
         font-size: 6rem;
@@ -13,12 +21,12 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+
+        @include mediaQueries(smallphone) {
+            font-size: 10rem;
+        }
     }
 
-    &__text {
-        font-size: 1.6rem;
-        
-    }
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);

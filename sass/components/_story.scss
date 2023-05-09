@@ -7,6 +7,10 @@
     padding-left: 9rem;
     transform: skewX(-12deg);
     overflow: hidden;
+
+    @include mediaQueries(smallphone) {
+        width: 85%;
+    }
     
     &__shape {
         width: 15rem;

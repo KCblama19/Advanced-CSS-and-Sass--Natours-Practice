@@ -2,6 +2,11 @@
     margin-top: -25vh;
     padding: 30rem 0;
     background-color: #f7f7f7;
+
+    @include mediaQueries(smallphone) {
+        margin-top: -15vh;
+        padding: 35rem 10rem;
+    }
 }
 
 .features-section {
@@ -15,6 +20,10 @@
     margin-top: -13rem;
     
     transform: skewY(-7deg);
+
+    @include mediaQueries(smallphone) {
+        margin-top: -6rem;
+    }
 
     & > * {
         transform: skewY(7deg);
@@ -43,10 +52,25 @@
 
     height: 48rem;
 
+    @include mediaQueries(smallphone) {
+        background-image: linear-gradient(105deg,
+                      rgba($color-white, .9)100%,
+                      transparent 0%,
+                      ),url(../img/nat-10.jpg);
+        width: 80%;
+        margin: 0 auto;
+        height: 60rem;
+        padding: 0 2rem;
+    }
+
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include mediaQueries(smallphone) {
+            width: 100%;
+        }        
     }
 }
 

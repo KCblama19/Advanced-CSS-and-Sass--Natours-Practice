@@ -23,6 +23,10 @@
 
         display: table;
         transition: all .3s .3s;
+
+        @include mediaQueries(smallphone) {
+            width: 90%;
+        }
         
     }
 
@@ -36,11 +40,19 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include mediaQueries(smallphone) {
+            padding: 0 3rem;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+
+        @include mediaQueries(smallphone) {
+            height: 33rem;
+        }
     }
 
     &__text {
@@ -70,6 +82,10 @@
             right: 2.5rem;
             font-size: 2.5rem;
             line-height: 1;
+
+            @include mediaQueries(smallphone) {
+                font-size: 4rem;
+            }
          }
 
          &:hover {

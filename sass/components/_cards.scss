@@ -4,6 +4,9 @@
     position: relative;
     height: 50rem;
     
+    @include mediaQueries(smallphone) {
+        height: 88rem;
+    }
     
     // CARD FUNCTIONALITY
     &__side {
@@ -17,15 +20,36 @@
         overflow: hidden;
         backface-visibility: hidden;
 
+        @include mediaQueries(smallphone) {
+            width: 60%;
+            transform: translate(18rem);
+        }
+
 
         &-front {
             background-color: #fff;
             box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
             color: black;
+
+            @include mediaQueries(smallphone) {
+                height: 63rem;
+            }
         }
 
         &-back {
             transform: rotateY(180deg);
+
+            @include mediaQueries(smallphone) {
+                transform: rotateY(0);
+                border-radius: 0;
+                top: 50rem;
+                transform: translate(18rem);
+
+                height: 32rem;
+
+                -webkit-clip-path: polygon(0% 20%,0% 100%,100% 100%,100% 0%);
+                clip-path: polygon(0% 20%,0% 100%,100% 100%,100% 10%);
+            }
 
             &--1 {
             background-image: linear-gradient(to bottom right, $secondary-color-light, $secondary-color-dark);
@@ -46,9 +70,19 @@
 
     &:hover &__side-front {
         transform: rotateY(-180deg);
+
+        @include mediaQueries(smallphone) {
+            transform: rotateY(0);
+            transform: translate(18rem);
+        }
     }
     &:hover &__side-back {
         transform: rotateY(0);
+        
+        @include mediaQueries(smallphone) {
+            transform: translate(18rem);
+        }
+        
     }
 
     // FONT SIDE STYLING
@@ -59,6 +93,10 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0% 0%,0% 100%,100% 85%,100% 0%);
         clip-path: polygon(0% 0%,0% 100%,100% 85%,100% 0%);
+
+        @include mediaQueries(smallphone) {
+            height: 28rem;
+        }
         
         &--1{
             background-image: linear-gradient(to bottom right, $secondary-color-light, $secondary-color-dark),url(../img/nat-5.jpg);
@@ -140,10 +178,19 @@
 
     &__price-only {
         font-size: 1.6rem;
+
+        @include mediaQueries(smallphone) {
+            margin-top: 1.5rem;
+        }
     }
     &__price-value {
         font-size: 6rem;
         font-weight: 100;
+        margin-bottom: 2.5rem;
+
+        @include mediaQueries(smallphone) {
+            margin-bottom: 0;
+        }
     }
 
     

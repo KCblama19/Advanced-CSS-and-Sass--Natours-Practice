@@ -18,9 +18,32 @@ Dark green: #28b485
 }
 
 html {
-    font-size: 66.5%;
+
+    //  This defines what 1rem is
+    font-size: 63%;   // 1rem = 10px; 10px/16px = 62.5% or 63%;
+    
+    @include mediaQueries(bigscreen) {
+        font-size: 81%; // 13rem = 13px; 13px/16 = 81%;
+    }
+
+    @include mediaQueries(tabletphone) {
+        font-size: 56%; // 9rem = 9px; 9px/16px = 56%;
+    }
+
+    @include mediaQueries(mediumphone) {
+        font-size: 44%; // 7rem = 7px; 7px/16px = 43.7% or 44%;
+    }
+
+    @include mediaQueries(smallphone) {
+        font-size: 25%; // 4rem = 4px; 4px/16px = 25%  
+    }
 }
 
 body {
     background-color:$color-white;
+    padding: 3rem;
+
+    @include mediaQueries(smallphone) {
+        padding: 0;
+    }
 }
