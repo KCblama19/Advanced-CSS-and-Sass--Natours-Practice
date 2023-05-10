@@ -12,10 +12,10 @@
         @media screen and (max-width: 37.5em ) { @content }; // 600px
     }
     @if $breakpoint == mediumphone {
-        @media screen and (max-width: 56.26em ) { @content }; // 900px
+        @media screen and (max-width: 60em ) { @content }; // 980px
     }
-    @if $breakpoint == tabletphone {
-        @media screen and (max-width: 75em ) { @content }; // 1200px
+    @if $breakpoint == tabletphone  {
+        @media screen and (max-width: 80em ) { @content }; // 1250px
     }
     @if $breakpoint == bigscreen {
         @media screen and (min-width: 112.5em ) { @content }; // 1800px

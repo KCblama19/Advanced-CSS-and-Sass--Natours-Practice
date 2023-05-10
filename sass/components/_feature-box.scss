@@ -6,6 +6,12 @@
     box-shadow: 0 1rem 1rem rgba(0, 0,0, 0.2);
     transition: transform .3s;
 
+    @include mediaQueries(tabletphone) {
+        width: 100%;
+        padding-inline: .4rem;
+        font-size: 1.4rem;
+    }
+
     @include mediaQueries(smallphone) {
         
         width: 85%;

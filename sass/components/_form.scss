@@ -4,6 +4,12 @@
         margin-bottom: 2.5rem;
     }
 
+    @include mediaQueries(smallphone) {
+        &__group:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
     &__input {
         width: 100%;
         font-family: inherit;
@@ -57,6 +63,16 @@
         // border: 1px solid;
         position: relative;
         
+
+        @include mediaQueries(smallphone) {
+
+            margin-bottom: 5.5rem;
+            
+            &:not(:last-child) {
+                margin-bottom: 2.5rem;
+            }
+        }
+        
         &:not(:first-child) {
             margin-left: 1rem;
 
@@ -79,7 +95,8 @@
         padding-left: 4rem;
 
         @include mediaQueries(smallphone) {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            padding-left: 6rem;
         }
         
     }
@@ -95,7 +112,10 @@
         left: 0;
 
         @include mediaQueries(smallphone) {
-            top: .5rem;
+            top: -.2rem;
+            width: 5rem;
+            height: 5rem;
+            border: 3px solid $primary-color;
         }
 
         &::after {
@@ -109,6 +129,11 @@
             top: .3rem;
             left: .3rem;
             opacity: 0;
+
+            @include mediaQueries(smallphone) {
+                top: 1rem;
+                left: 1rem;
+            }
         }
     }
 

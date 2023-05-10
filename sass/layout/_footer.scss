@@ -19,6 +19,13 @@
         border-top: 2px solid $color-dark-gray;
         padding-top: 2rem;
         display: inline-block;
+        
+
+        @include mediaQueries(smallphone) {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 1.5rem;
+        }
     }
 
     &__list {
@@ -64,6 +71,7 @@
         width: 60%;
         text-align: center;
         margin: 0 auto;
+        
 
     }
 }

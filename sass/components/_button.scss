@@ -15,6 +15,10 @@
         position: relative;
     
         transition: all 0.3s ease;
+
+        @include mediaQueries(smallphone) {
+            font-size: 2rem;
+        }
     }
     
     &:hover {
@@ -86,6 +90,10 @@
         padding: .5rem;
         transition: all .2s;
         display: inline-block;
+
+        @include mediaQueries(smallphone) {
+            font-size: 2.5rem;
+        }
     }
 
     &:hover {

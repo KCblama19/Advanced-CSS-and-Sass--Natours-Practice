@@ -3,6 +3,10 @@
     padding: 30rem 0;
     background-color: #f7f7f7;
 
+    @include mediaQueries(tabletphone) {
+        padding: 30rem 5rem;
+    }
+
     @include mediaQueries(smallphone) {
         margin-top: -15vh;
         padding: 35rem 10rem;
@@ -59,8 +63,9 @@
                       ),url(../img/nat-10.jpg);
         width: 80%;
         margin: 0 auto;
-        height: 60rem;
+        height: 70rem;
         padding: 0 2rem;
+        padding-bottom: 8rem;
     }
 
 

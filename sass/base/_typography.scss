@@ -51,6 +51,10 @@ body {
         transform: skewX(15deg) skewY(2deg);
     }
 
+    @include mediaQueries(tabletphone) {
+        font-size: 3rem;
+    }
+
     @include mediaQueries(smallphone) {
         font-size:3.2rem;
     }
@@ -60,6 +64,10 @@ body {
 .heading-tertiary {
     font-size: 1.7rem;
     text-transform: uppercase;
+
+    @include mediaQueries(tabletphone) {
+        font-size: 1.5rem;
+    }
 
     @include mediaQueries(smallphone) {
         font-size: 2.7rem;

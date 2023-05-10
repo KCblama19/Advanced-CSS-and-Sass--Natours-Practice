@@ -2,7 +2,11 @@
     max-width: 114rem;
     // background-color: #eee;
     margin-inline: auto;
-    
+
+    @include mediaQueries(tabletphone) {
+        padding: 3rem 4rem;
+    }    
+
     @include mediaQueries(smallphone) {
         max-width: 100%;
         padding: 3rem;
@@ -25,6 +29,10 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include mediaQueries(tabletphone) {
+                margin-right: $gutter-horizontal--small;
+            }
         }
     }
 
@@ -40,6 +48,7 @@
     .col-1-of-3 {
         width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
 
+        
         @include mediaQueries(smallphone) {
             width: 100%;
             margin-bottom: $gutter-vertical-small;
