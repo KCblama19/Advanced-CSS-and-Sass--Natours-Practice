@@ -233,7 +233,7 @@ body {
     transition: all .2s; }
     @media screen and (max-width: 80em) {
       .composition__photo {
-        width: 60%; } }
+        width: 62%; } }
     @media screen and (max-width: 37.5em) {
       .composition__photo {
         width: 35%; } }

@@ -10,7 +10,7 @@
         transition: all .2s;
 
         @include mediaQueries(tabletphone) {
-           width: 60%;
+           width: 62%;
         }
 
         @include mediaQueries(smallphone) {
